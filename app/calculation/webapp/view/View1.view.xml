@@ -1,0 +1,33 @@
+<mvc:View
+    controllerName="calculation.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <VBox id="_IDGenVBox1"
+        justifyContent="Start"
+        alignItems="Center"
+        width="100%"
+        height="100%">
+        <Title id="_IDGenTitle" text="Simple Calculator" level="H1" class="customTitle"/>
+        <VBox id="_IDGenVBox2"
+            width="300px"
+            alignItems="Center"
+            justifyContent="Center"
+            class="sapUiSmallMargin">
+            <Label id="_IDGenLabel" text="First number"/>
+            <Input id="input1" placeholder="Enter first number" width="100%" class="sapUiSmallMarginBottom"/>
+            <Label id="_IDGenLabel1" text="Second number"/>
+            <Input id="input2" placeholder="Enter second number" width="100%" class="sapUiSmallMarginBottom"/>
+            <HBox id="_IDGenHBox"
+                justifyContent="SpaceAround"
+                width="100%"
+                class="sapUiSmallMarginBottom">
+                <Button id="_IDGenButton" text="Find Greater" press=".onFindGreater"/>
+                <Button id="_IDGenButton1" text="Sum" press=".onSum"/>
+                <Button id="_IDGenButton2" text="Subtract" press=".onSubtract"/>
+                <Button id="_IDGenButton3" text="Multiply" press=".onMultiply"/>
+                <Button id="_IDGenButton4" text="Divide" press=".onDivide"/>
+            </HBox>
+            <Text id="_IDGenText" text="{resultModel>/result}" class="sapUiSmallMarginTop"/>
+        </VBox>
+    </VBox>
+</mvc:View>
